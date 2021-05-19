@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="./images/bg-pattern.svg" alt="" class="img">
+  <div class="continer">
+    <div class="heder">
+      <h2>Simple, traffic-based pricing</h2>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="card">
+      <div class="top">
+        <p>Pageviews</p>
+        <div class="praic">
+          <h1 id="pris"></h1>
+          <span>/month</span>
+        </div>
+      </div>
+      <div class="slider" >
+        <div class="color" >
+          <input type="range" min="0"  max="100" value="50" class="emt" id="sliderr">
+          <div class="brog"></div>
+          <div class="slid" id="slid">
+            <div id="btn"></div>
+          </div>
+        </div>
+        <!----
+        <div class="emt"></div>
+        
+        ---->
+      </div>
+      <div class="mid">
+        <p>Monthly Billing</p>
+        <button>
+          <span class="spa"></span>
+        </button>
+        <p>Yearly Billing</p>
+        <p class="prsant">25% discount</p>
+      </div>
+      <div class="foter">
+        <div class="left">
+          <p>
+            <img src="./images/icon-check.svg" alt="">
+            Unlimited websites</p>
+          <p>
+            <img src="./images/icon-check.svg" alt="">
+            100% data ownership</p>
+          <p>
+            <img src="./images/icon-check.svg" alt="">
+            Email reports</p>
+        </div>
+        <div class="but">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  ---->
+  <script src="app.js"></script>
+</body>
+</html>
